@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.poke {
+    margin: 100px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.versao {
+    display: block;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.texto img {
+    width: 2200px;
+    height: 600px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+
+.tudo { 
+     margin-right: 50px;
+}
+.texto p {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 30px;
+    word-break: break-all;
+    line-height: 1.5;
+    margin-top: 60px;
+}
+.versao label{
+    display: block;
+    justify-content: right;
+    font-size: 40px;
+}.versao img {
+    width: 40px;
+    height: 40px;
+}
+
+.versao label[for="version"]{
+    margin-top: 20px;
+}
+
+.especificacao{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    background-color: #30a7d7;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    margin-top: 40px;
+    white-space: pre;
+    max-width: 950px;
+}
+
+.especificacao label[for="corpo"]{
+    display: block;
+    justify-content: left;
+    align-items: start;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 320px;
+    font-size: 30px;
+    word-spacing: 520px;
+}
+
+.especificacao label[for="tamanho"]{
+    color: #000;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    white-space: pre;
+    word-spacing: 520px;
+}
+
+.especificacao label[for="tamanhos"]{
+    color: #000;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    white-space: pre;
+    word-spacing: 540px;
+}
+
+.statipo {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.stats { 
+    width: 1400px;
+    height: 600px;
+    background-color: #a4a4a4;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-right: 10px;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.tipo {
+    display: inline;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 14px;
+    width: 1800px;
+}
+.tipo label[for="type"] {
+    font-size: 30px;    
+    margin-top: 40px;
+}
+.tipo label[for="card"]{
+    padding: 10px 100px 10px 100px;
+    border-radius: 7px;
+    font-size: 14px;
+    text-align: center;
+}
+.tipo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tipo div {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin: 5px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.grama { 
+    background-color: #78C850;
+}
+.poison 
+{ 
+    background-color: #A040A0; 
+    color: white;
+}
+.fire { 
+    background-color: #F08030; 
+    color: white;
+}
+.ice { 
+    background-color: #98D8D8; 
+}
+.flying { 
+    background: linear-gradient(#98D8D8 50%, #a4a4a4 50%); 
+}
+.psychic { 
+    background-color: #F85888; 
+    color: white;
+}
+
+.evolucao {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    background-color: #424242;
+    margin-top: 40px;
+}
+
+.evol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px ;
+    margin-bottom: 20px;
+    gap: 100px;
+}
+.evol img {
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.seta img {
+    border: none;
+    box-shadow: none;
+    width: 100px;
+    transform: rotate(180deg);
+}
+
+.evolucao label[for="evolu"]{
+    font-size: 40px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.tipagem {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 375px;
+    margin-bottom: 25px;
+}
+
+.tipagem label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tipagem label[for="card"]{
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.grama, .poison {
+    border-radius: 8px;
+}
+
+.espaco {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.pokemon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 500px;
+}
+.espacos {
+    display: inline;
+    text-align: center;
+    justify-content: center;
+}
+.espacos label[for="pokemon"]{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.stats label[for="status"]{ 
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    max-height: 50px;
+}
+
+.statuz {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+    text-align: center;
+}
+.branco {
+    display: block;
+    width: 70px;
+    height: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.azul {
+    display: block;
+    width: 70px;
+    height: 10px;
+    margin-bottom: 20px;
+    background-color: #30a7d7;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.special-attack, .special-defense{
+    margin-top: 16px;
+}
