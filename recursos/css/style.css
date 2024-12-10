@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Flexo;
+    src: url(fonte/Flexo-Regular.ttf);
+}
+html {
+    background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 21.5rem;
+    font-family: Flexo,arial,sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin: 64px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png");
+    padding: 1rem;
+    gap: 1rem;
+    color: #fff;
+}
+
+span {color: #616161;}
+
+footer span {
+    color: #c4c4c4;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: -40px;
+    text-align: center;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    padding: 1rem;
+    background-color: #929292;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.status .topo {
+    font-size: 24px;
+}
+
+ul.estatisticas {
+    display: flex;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+
+ul.estatisticas li {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 75px;
+}
+
+ul.estatisticas li span {
+    color: black;
+    font-weight: bold;
+}
+
+ul.estatisticas li div {
+    display: flex;
+    width: 75px;
+    height: 10px;
+    background-color: #fff;
+}
+
+ul.estatisticas li div.ponto {
+    background-color: #30a7d7;
+}
+
+div.lado-direito p {font-size: 24px;}
+.femea {display: none;}
+
+.versoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.versoes img {
+    width: 50px;
+    height: 50px;
+    border: #ffffff00 solid 4px;
+}
+
+.versoes img#marcado {
+    border: #30a7d7 solid 4px;
+    border-radius: 1000px;
+}
+
+.sobre {
+    display: flex;
+    background-color: #30a7d7;
+    border-radius: 10px;
+    padding: 2px;
+    height: 245px;
+    gap: 10rem;
+    margin: 1rem 0;
+}
+
+.listagem span {
+    font-size: 36px;
+    color: black;
+}
+
+.inf-nome {
+    color: #fff;
+    font-size: 20px;
+}
+
+.atribuicao {
+    color: rgb(19, 19, 19);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer .topo {
+    font-size: 24px;
+}
+
+.evolucoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seta {
+    width: 50px;
+    margin-bottom: 7rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.info img {
+    width: 170px;
+    border: 4px solid #fff;
+    border-radius: 500px;
+    box-shadow: 0 3px 10px black;
+    background-color: #616161;
+}
+
+.info .tag {
+    margin-top: 10px;
+    display: flex;
+    font-size: 24px;
+}
+
+.sobre ul, .sobre ul li {
+    align-items: start;
+    flex-direction: column;
+}
+
+ul.lado-esquerdo {
+    margin-left: -20px;
+}
+
+.info ul {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    height: fit-content;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.listagem ul {
+    flex-direction: row;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.listagem ul li {
+    width: 200px;
+}
+
+.info ul li {
+    width: 120px;
+}
+
+.grama, .veneno, .fogo, .gelo, .voador, .psiquico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-grow: 1;
+    height: 45px;
+    color: black;
+}
+
+.info ul li p {
+    height: 20px;
+}
+
+.veneno, .fogo, .psiquico {color: aliceblue;}
+
+.grama {background-color: #9bcc50;}
+.gelo {background-color: #51c4e7;}
+.veneno {background-color: #b97fc9;}
+.psiquico {background-color: #f366b9;}
+.fogo {background-color: #fd7d24;}
+
+.voador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
