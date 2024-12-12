@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.pokemon-name {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0 60px 0;
+}
+
+.pokemon-name span {
+  font-weight: normal;
+  color: #888;
+}
+
+.pokemon-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.pokemon-img {
+  margin-top: 5px;
+  width: 110%;
+  border-radius: 10px;
+}
+
+.description {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.versions {
+  margin-bottom: 20px;
+}
+
+.versions h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pokebola-azul, .pokebola-vermelha {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.pokebolas {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-section {
+  width: 55%;
+}
+
+.info-box {
+  background-color: #30A7D7;
+  color: white;
+  padding: 25px 15px 85px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  background-color: #30A7D7;
+  color: white;
+  padding: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-box p {
+  margin: 5px 0;
+  display: block;
+  flex-basis: 48%;
+  justify-content: space-between;
+}
+
+.info-box .label {
+  font-weight: bold;
+  color: white;
+}
+
+.info-box .info {
+  color: black;
+  font-weight: normal;
+  text-align: right;
+}
+
+.info-box .gender {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.info-box p + p {
+  margin-top: 10px;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+.info-box .label {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.info-box .info {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.type-weakness-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.type, .weakness {
+  text-align: left;
+}
+
+.type-btn, .weakness-btn {
+  width: 31.9%;
+  margin: 5px 3px 0 0;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.type-btn.grass {
+  background-color: #78c850;
+}
+
+.type-btn.poison {
+  background-color: #B97FC9;
+}
+
+.weakness-btn.fire {
+  background-color: #f08030;
+}
+
+.weakness-btn.ice {
+  background-color: #51C4E7;
+}
+
+.weakness-btn.flying {
+  background: linear-gradient(to bottom, #51C4E7 50%, #BDB9B8 50%);
+}
+
+.weakness-btn.psychic {
+  background-color: #f85888;
+}
+
+.type-btn.grass,
+.weakness-btn.ice,
+.weakness-btn.flying {
+  color: black;
+}
+
+.stats {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.stats h3 {
+  margin-bottom: 10px;
+}
+
+.stats-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.chart-container {
+  background-color: #A4A4A4;
+  padding: 27px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.chart-title {
+  font-size: 1em;
+}
+
+.stat-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: 35px;
+  height: 160px;
+}
+
+.stat-bar .segment {
+  width: 140%;
+  height: 10px;
+  background-color: #fff;
+  margin: 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.stat-bar .segment.filled {
+  background-color: #30A7D7;
+}
+
+.stat-label {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.backgroud-section {
+  width: 100%;
+  padding-top: 25px;
+}
+
+.evolutions {
+  text-align: center;
+  background: #595959;
+  padding: 20px;
+  position: relative;
+}
+.evolutions h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+.evolution-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.evolution {
+  text-align: center;
+}
+
+.evolution img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.arrow {
+  font-size: 2rem;
+  color: white;
+}
+
+.evolution-info {
+  margin-top: 10px;
+}
+
+.words {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.word {
+  background: #6cdb7b;
+  padding: 4px 28px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.word.poison {
+  background: #c779d0;
+  color: white;
+}
+
+.name-evolution {
+  color: #ffffff;
+}
+
+.name-evolution span {
+  color: #A4A4A4;
+}
