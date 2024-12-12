@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Flexo;
+    src: url(Flexo-Regular.ttf);
+}
+
+html {
+    font-family: Flexo,arial,sans-serif;
+}
+ 
+.container {
+    display: grid;
+    grid-template-columns: 20% 30% 35% 5%;
+    place-items: center;
+    grid-template-rows: auto;
+}
+
+.titulo {
+    grid-column: span 5;
+    grid-row: 1;
+    color: rgb(0, 0, 0);
+}
+
+.text-image {
+    grid-column: 3;
+    grid-row: 2;
+    color: rgb(16, 15, 15);
+    margin-left: 20px;
+}
+ 
+#descricao {
+    margin-top: 70px;
+    font-size: 23px;
+}
+ 
+.bulbassauro {
+    margin-top: 90px;
+    grid-column: 2;
+    grid-row: 2;
+}
+ 
+.versoes {
+    display: grid;
+    grid-template-columns: 80px 50px 50px;
+    gap: 20px;  
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pokebola {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#pokebola-vermelha {
+    border: 5px solid white;
+}
+
+.interrogacao {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#pokebola-azul {
+    border: 5px solid blue;
+    margin-left: 15px;
+}
+ 
+h3 {
+    font-size: 22px;
+    color: rgb(81, 77, 77);
+}
+
+div.atributos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: #50abe4;
+    height: 270px;
+    border-radius: 15px;
+    font-size: 20px;
+ }
+ 
+#height, #category, #weight, #abilities, #gender {
+    color: white;
+    padding-top: 10px;
+}
+ 
+#height {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 20px;
+}
+ 
+#valor-height {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 20px;
+}
+ 
+#weight {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 20px;
+}
+ 
+#valor-weight {
+    grid-column: 1;
+    grid-row: 4;
+    padding-left: 20px;
+}
+ 
+#gender {
+    grid-column: 1;
+    grid-row: 5;
+    padding-left: 20px;
+}
+ 
+span#icone-masculino {
+    grid-column: 1;
+    grid-row: 6;
+    padding-left: 20px;
+}
+ 
+span#icone-feminino {
+    grid-column: 1;
+    grid-row: 6;
+    padding-left: 50px;
+}
+ 
+#category {
+    grid-column: 2;
+    grid-row: 1;
+}
+ 
+#abilities {
+    grid-column: 2;
+    grid-row: 3;
+}
+ 
+#valor-category {
+    grid-column: 2;
+    grid-row: 2;
+}
+ 
+#valor-abilities {
+    grid-column: 2;
+    grid-row: 4;
+}
+ 
+#valor-abilities, #valor-category, #valor-height, #valor-weight, #icone-masculino, #icone-feminino {
+    font-size: 25px;
+}
+
+.stats {
+    display: flex;
+    border-radius: 10px;
+    width: 410px;
+    height: 300px;
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(168, 167, 167);
+}
+
+.status-lista {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+    margin-left: -46px;
+    margin-bottom: 40px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+.coluna li {
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 1px 0;
+}
+
+.coluna li.azul{
+    background-color:#50abe4;
+}
+
+.titulo-stats {
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+
+.texto-quebrado {
+    margin-bottom: -19px;
+}
+
+#ajuste-coluna-6 {
+    margin-right: 20px;
+}
+
+#tipo {
+    display: flex;
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+#type {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+
+#grass {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 55px;   
+    margin-left: -38px;
+    background-color: rgb(126, 209, 2);
+}
+
+#poison {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 55px;   
+    margin-left: 5px;
+    color: white;
+    background-color: rgba(163, 39, 163, 0.641);
+}
+
+#fraquezas {
+    display: flex;
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: start;
+    align-self: center;
+}
+
+#weaknesses {
+    font-size: 20px;
+    margin-left: 22px;
+}
+
+#fire {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 55px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 55px;   
+    margin-left: -107px;
+    color: white;
+    background-color: #ef820b;
+}
+
+#ice {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 55px;
+    margin-left: 5px;
+    background-color: #3dc7ef;
+}
+
+#flying {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 55px;
+    margin-left: 5px;
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+    #psychic {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 45px;
+    padding-right: 42px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 75px;
+    margin-left: 30px;
+    position: relative;
+    color: white;
+    background-color: rgb(255, 92, 255);
+}
+
+.psic {
+    display: flex;
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+
+.evolutions {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 950px;   
+    height: 350px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-right: -540px;
+    grid-column: 2;
+    background-color: rgb(103, 103, 103);
+}
+
+#titulo-evolutions {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+#estagio-1-img{
+    width: 150px;
+    height: 150px;
+    padding: 8px 8px;
+    margin-left: 45px;
+    border: 5px solid white; 
+    border-radius: 50%;
+}
+
+#estagio-2-img {
+    width: 150px;
+    height: 150px;
+    padding: 8px 8px;
+    margin-left: 25px;
+    border: 5px solid white; 
+    border-radius: 50%;
+}
+
+#estagio-3-img {
+    width: 150px;
+    height: 150px;
+    padding: 8px 8px;
+    margin-left: 35px;
+    border: 5px solid white; 
+    border-radius: 50%;
+}
+
+#estagio-1 {    
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 50px;
+}
+
+#estagio-2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#estagio-3 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#nome-1, #nome-2, #nome-3{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.text-evolutions {
+    margin-top: 30px;
+}
+
+#grass-3 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(126, 209, 2);  
+}
+
+#poison-3 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgba(163, 39, 163, 0.641);
+}
+
+#grass-2 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(126, 209, 2);  
+}
+
+#poison-2 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgba(163, 39, 163, 0.641);
+}
+
+#grass-1 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(126, 209, 2);  
+}
+
+#poison-1 {
+    border: 1px solid none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgba(163, 39, 163, 0.641);
+}
+
+.seta-img {
+    width: 150px;
+    height: 150px;
+}
+
+#seta-1 {
+    margin-left: 220px;
+    font-size: 100px;
+    color: white;
+    margin-top: -220px;
+}
+
+#seta-2 {
+    margin-left: 200px;
+    font-size: 100px;
+    color: white;
+    margin-top: -220px;
+}
+
+#grass-1, #grass-2, #grass-3 {
+    margin-right: 3px;
+}
