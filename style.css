@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(112, 112, 226);
+    border-radius: 30px;
+    width: 30%;
+}
+
+.corpo {
+    word-spacing: 30px;
+    color: #f5f5f5;
+}
+
+.tamanho {
+    word-spacing: 30px;
+}
+
+.primeiro {
+    display: flex;
+    margin: 30px;
+}
+
+.segundo {
+    display: flex;
+}
+
+.pokebola {
+    width: 30px;
+    height: 30px;
+}
+
+.fotoBulba {
+    width: 380px;
+    height: 380px;
+}
+
+span {
+    color: gray;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tudo {
+    display: inline-block;
+}
+
+.grass {
+    background-color: greenyellow;
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+}
+
+.poison {
+    background-color: rgb(155, 50, 155);
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+    color: #f5f5f5;
+
+}
+
+.fire {
+    background-color: orangered;
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.ice {
+    background-color: rgb(94, 94, 231);
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+}
+
+.flying {
+    background-color: rgb(94, 94, 231);
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, deepskyblue 50%, lightgray 50%);
+}
+
+.psychic {
+    background-color: rgb(231, 94, 220);
+    margin: 5px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.status {
+    display: flex;
+    background-color: grey;
+    width: 35%;
+    padding: 25px;
+}
+
+.branco {
+    background-color: lightgray;
+    width: 50px;
+    height: 10px;
+    margin: 4px;
+
+}
+
+.azul {
+    background-color: rgb(0, 119, 255);
+    width: 50px;
+    height: 10px;
+    margin: 4px;
+}
+
+.hp .attack .defense .specialAttack .specialDefense .speed {
+    margin: 30px;
+}
+
+.evolucao {
+    display: flex;
+    background-color: rgb(75, 73, 73);
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+}
+
+.seta{
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+}
