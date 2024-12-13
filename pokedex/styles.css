@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+ 
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+h1 {
+  text-align: center;
+}
+ 
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+ 
+.info-section img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+ 
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+ 
+.stats, .traits, .type-weaknesses {
+  flex: 1;
+  margin: 0 10px;
+}
+ 
+.stat-bars div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+ 
+.bar {
+  background: #eee;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+ 
+.bar div {
+  background: #6c6;
+  height: 100%;
+}
+ 
+.types, .weaknesses {
+  font-size: 14px;
+  margin: 5px 0;
+}
+ 
+.evolutions {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.evolution-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.evo {
+  text-align: center;
+  margin: 0 10px;
+}
+ 
+.evo img {
+  width: 80px;
+  margin-bottom: 5px;
+}
+ 
+.arrow {
+  font-size: 24px;
+}
