@@ -1,0 +1,230 @@
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+}
+ 
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+ 
+.bulba {
+    color: black;
+    padding: 10px
+}
+ 
+.numeros {
+    color: silver;
+    padding: 10px
+}
+.division {
+    width: 475px;
+    margin: 15px;
+}
+ 
+.buba {
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+ 
+.stats {
+    background-color: darkgray;
+    border-radius: 8px;
+}
+ 
+h4 {
+    padding: 10px;
+}
+ 
+div.stats-table {
+    display: flex;
+    justify-content: center;
+}
+ 
+div tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+ 
+div tr.values td {
+    background-color: white;
+    height: 6px;
+    padding: 0px;
+    margin-bottom: 4px;
+}
+ 
+div th {
+    font-size: small;
+}
+ 
+td.blue {
+    background-color: deepskyblue !important;
+}
+ 
+ul {
+    list-style: none;
+}
+ 
+.versions {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+ 
+img.pokeball {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 10px;
+}
+ 
+#x {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: dodgerblue;
+}
+ 
+#y {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+}
+ 
+div.informacoes {
+    display: flex;
+    background-color: deepskyblue;
+    border-radius: 8px;
+}
+ 
+ul.informacoes {
+    padding-right: 40px;
+}
+ 
+.cor {
+    color: white;
+}
+ 
+.cor + li {
+    font-size: x-large;
+}
+ 
+li img {
+    width: 35px;
+    height: 35px;
+}
+ 
+div.grid-container#type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+}
+ 
+span#type {
+    display: block;
+    padding: 5px 0px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 125px;
+    text-align: center;
+}
+ 
+.grass {
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+ 
+.poison {
+    color: white;
+    background-color: plum;
+    border-color: plum;
+}
+ 
+.fire {
+    color: white;
+    background-color: darkorange;
+    border-color: darkorange;
+}
+ 
+.ice {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+ 
+.flying {
+    background: linear-gradient(180deg, deepskyblue 50%, lightgray 50%);
+}
+ 
+.psychic {
+    color: white;
+    background-color: hotpink;
+    border-color: hotpink;
+}
+ 
+h1 span, h3 span {
+    color: gray;
+}
+ 
+div.evolutions li img {
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    box-shadow: 2px 4px 6px;
+    background-color: dimgray;
+}
+ 
+li span#type {
+    display: block;
+    margin: 15px;
+    border-radius: 8px;
+    width: 62px;
+    text-align: center;
+}
+ 
+li div.grid-container#type {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+ 
+li .center {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+ 
+li h3 span {
+    color: lightgray;
+}
+ 
+li h3  {
+    color: white;
+}
+ 
+div.evolutions > h3 {
+    margin: 15px;
+    color: white;
+}
+ 
+div.evolutions {
+    width: 980px;
+    border-radius: 8px;
+}
+ 
+div.evolutions img {
+    width: 215px;
+    height: 215px;
+}
+ 
+div.evolutions ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+ 
+div.evolutions li {
+    width: 215px;
+}
