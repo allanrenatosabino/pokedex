@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body{
+
+    .card{
+        height: 200px;
+        width: 50%;
+        background-color: hsla(195, 100%, 39%, 0.904);
+        border-radius: 8px;
+        font-size: small;  
+        list-style-type: none;
+        .color-white{ color: antiquewhite;}
+
+        
+    }
+    .texto {
+
+        p{
+        font-size: medium;
+        text-align: right;
+        object-position: right;}
+        }
+        .evolutions {
+            background-color: grey;
+            display: inline-block;
+        }
+
+}
+header{
+
+        h1{color:  black;} 
+        span{ color: grey;}
+        font-family: "Flexo-Medium", Arial, sans-serif;
+        text-align: center;
+    
+}
+
+
+@font-face{
+    font-family: "Flexo-Medium";
+    src: url(flexo-medium.woff2);
+}
+*{
+    font-family: "Flexo-Medium", Arial, sans-serif;
+}
+img {
+    width: auto;
+}
