@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 0.9fr 3fr 2.5fr 2fr;
+            gap: 10px;
+            padding: 10px;
+            height: 125vh;
+            width: 100vw;
+        }
+
+        .titulo {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1,
+        h2 {
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #616161;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5;
+        }
+
+
+        .img {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: #F2F2F2;
+            padding: 10px;
+        }
+
+        .img img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tabela {
+            grid-column: 1;
+            grid-row: 3;
+            background-color: #A4A4A4;
+        }
+
+        .descricao {
+            grid-column: 2;
+            grid-row: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+
+        .versoes {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .descricao p {
+            margin-right: 5px;
+            font-size: 15px;
+        }
+
+        .versoes div {
+            border-radius: 50%;
+        }
+
+        .azul-redondo {
+            border: 4px solid #17ADFF;
+        }
+
+        .pokebola,
+        .azul-redondo {
+            height: 30px;
+        }
+
+        .status {
+            background-color: #30A7D7;
+            max-height: 50%;
+            width: 85%;
+            padding: 20px;
+            align-self: center;
+            border-radius: 0.5cap;
+
+            display: flex;
+            gap: 10%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .status>div {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+
+        .status .esquerda p:first-of-type,
+        .status .direita p:first-of-type:not(#overgrow) {
+            color: white;
+            font-size: small;
+            text-align: left;
+            padding: 5px;
+        }
+
+        .status img {
+            height: 15%;
+        }
+
+        #overgrow {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        #overgrow img {
+            height: 20px;
+            padding-left: 10px;
+        }
+
+        .tabela {
+            border-radius: 0.5cap;
+            display: flex;
+            justify-content: center;
+
+            flex-direction: column;
+        }
+
+        .tabela p {
+            font-size: small;
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+
+        table {
+            align-self: center;
+            width: 95%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 1px solid #A4A4A4;
+        }
+
+        th {
+            font-size: 12px;
+        }
+
+        td {
+            width: 10%;
+            height: 7px;
+            text-align: center;
+            border: 5px solid #A4A4A4;
+            background-color: white;
+        }
+
+        .azul {
+            background-color: #30A7D7;
+        }
+
+        .q4 p {
+            padding: 10px;
+            padding-left: 5px;
+        }
+
+        .q4 div div {
+            border-radius: 0.5cap;
+            margin: 5px;
+            padding: 7px;
+            width: 33%;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        #branco {
+            background-color: white;
+        }
+
+        .grass {
+            background-color: #9BCC50;
+        }
+
+        .poison {
+            background-color: #B97FC9;
+            color: white;
+
+        }
+
+        #fire {
+            background-color: #FD7D24;
+            color: white;
+        }
+
+        #ice {
+            background-color: #51C4E7;
+        }
+
+        #psy {
+            background-color: #F366B9;
+            color: white;
+        }
+
+        #fly {
+            background: linear-gradient(to bottom, #51C4E7 50%, #BDB9B8 50%);
+        }
+
+
+        .evolucoes {
+            grid-column: 1 /span 2;
+            margin: 5px;
+            background-image: url(imagens/fundo.png);
+        }
+
+        .container2 {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .ev {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .container
+
+        .circulo {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: rgb(148, 148, 148);
+            border:4px solid white;
+            padding: 10px;
+        }
+
+        .circulo img {
+            
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+        }
+
+        div.evolucoes div {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .ev div div {
+            border-radius: 0.5cap;
+            margin: 5px;
+            padding: 7px;
+            width: 30%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="titulo">
+            <h1>Bulbasaur</h1>
+            <h2>#0001</h2>
+        </div>
+        <div class="img">
+            <img src="imagens/bulbasauro.png" alt="Bulbassauro">
+        </div>
+        <div class="descricao">
+            <p>For some time after its birth, it uses the nutrients that are packed into
+                the seed on its back in order to grow.
+            </p>
+
+            <div class="versoes">
+                <p>Versions:</p>
+
+                <div class="azul-redondo">
+                    <img class="pokebola" src="imagens/pokebola-azul.png" alt="Masc">
+                </div>
+
+                <div>
+                    <img class="pokebola" src="imagens/pokebola-rosa.png" alt="Fem">
+                </div>
+
+            </div>
+
+            <div class="status">
+                <div class="esquerda">
+                    <div id="height">
+                        <p>Height</p>
+                        <p>2' 04''</p>
+                    </div>
+
+                    <div id="weigth">
+                        <p>Weigth</p>
+                        <p>15.2 lbs</p>
+                    </div>
+
+                    <div id="gender">
+                        <p>Gender</p>
+                        <img class="generos" src="imagens/generos.png" alt="Generos">
+                    </div>
+                </div>
+
+                <div class="direita">
+                    <div id="category">
+                        <p>Category</p>
+                        <p>Seed</p>
+                    </div>
+
+                    <div id="abilities">
+                        <p>Abilities</p>
+                        <div id="overgrow">
+                            Overgrow
+                            <img class="interrogacao" src="imagens/interrogacao.png" alt="Interrogação">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="tabela">
+            <p>Stats</p>
+
+            <table>
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                </tr>
+                <tr>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                </tr>
+
+                <tr>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                    <td class="azul"></td>
+                </tr>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>HP</th>
+                    <th>Attack</th>
+                    <th>Defense</th>
+                    <th>Special Attack</th>
+                    <th>Special Defense</th>
+                    <th>Speed</th>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="especificacoes">
+            <div class="q4">
+                <p>Type</p>
+                <div class="row">
+                    <div class="grass">Grass</div>
+                    <div class="poison">Poison</div>
+                    <div id="branco"></div>
+                </div>
+            </div>
+            <div class="q4" id="fraquezas">
+                <p>Weaknesses</p>
+                <div class="row">
+                    <div id="fire">Fire</div>
+                    <div id="ice">Ice</div>
+                    <div id="fly">Flying</div>
+
+                </div>
+                <div class="row">
+                    <div id="psy">Psychic</div>
+                    <div id="branco"></div>
+                    <div id="branco"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="evolucoes">
+            <p>Evolutions</p>
+
+            <div class="container2">
+                <div class="ev" id="0001">
+                    <div class="circulo">
+                        <img src="imagens/bulbasauro.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <p class="nome">Bulbassaur</p>
+                        <p class="id">#0001</p>
+                    </div>
+
+                    <div id="tipo">
+                        <div class="grass">Grass</div>
+                        <div class="poison">Poison</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
