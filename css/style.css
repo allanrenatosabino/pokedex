@@ -1,327 +1,230 @@
-.title {
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+}
+ 
+.cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-
-.Bulbasaur,
-.numeros {
     text-align: center;
-    margin: 10px 0;
-    font-weight: bold;
+    padding: 10px;
 }
-
-.Bulbasaur {
-    color: #78C850;
-    font-size: 24px;
+ 
+.bulba {
+    color: black;
+    padding: 10px
 }
-
+ 
 .numeros {
-    color: #A040A0;
-    font-size: 20px;
+    color: silver;
+    padding: 10px
 }
-
-p {
-    text-align: right;
+.division {
+    width: 475px;
+    margin: 15px;
 }
-
+ 
+.buba {
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+ 
+.stats {
+    background-color: darkgray;
+    border-radius: 8px;
+}
+ 
+h4 {
+    padding: 10px;
+}
+ 
+div.stats-table {
+    display: flex;
+    justify-content: center;
+}
+ 
+div tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+ 
+div tr.values td {
+    background-color: white;
+    height: 6px;
+    padding: 0px;
+    margin-bottom: 4px;
+}
+ 
+div th {
+    font-size: small;
+}
+ 
+td.blue {
+    background-color: deepskyblue !important;
+}
+ 
+ul {
+    list-style: none;
+}
+ 
 .versions {
     display: flex;
-    justify-content: flex-end;
-}
-
-.versions img {
-    width: 50px;
-    margin-left: 10px;
-}
-
-.Bulbasaur {
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px;
-
-}
-
-.Bulbasaur img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.atributos {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanhos iguais */
-    gap: 10px 20px; /* Espaçamento entre linhas e colunas */
-    max-width: 500px;
-    margin: 20px auto; /* Centraliza no container */
-    padding: 20px;
-    background-color: #eaf6ff; /* Fundo azul claro */
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-.atributos div {
-    display: flex;
-    justify-content: space-between; /* Espaçamento entre o atributo e o valor */
-    align-items: center;
-    padding: 5px 0;
-}
-
-.atributos div.left {
-    grid-column: 1; /* Posiciona na coluna da esquerda */
-}
-
-.atributos div.right {
-    grid-column: 2; /* Posiciona na coluna da direita */
-}
-
-.atributos span {
-    font-weight: bold;
-    color: #34495e;
-}
-
-.atributos #valor {
-    color: #3498db;
-}
-
-#icone-masculino, #icone-feminino {
-    font-size: 16px;
-    font-weight: bold;
-    color: #3498db;
-    margin-left: 10px;
-}
-
-#icone-feminino {
-    color: #e74c3c;
-}
-
-
-.stats {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 900px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.stats>.stats {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c3e50;
+    justify-content: start;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #3498db;
-    display: inline-block;
-    padding-bottom: 5px;
 }
-
-.lista {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.coluna-1,
-.coluna-2,
-.coluna-3,
-.coluna-4,
-.coluna-5,
-.coluna-6 {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    height: 180px;
-    width: 60px;
-    position: relative;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.coluna-1 li,
-.coluna-2 li,
-.coluna-3 li,
-.coluna-4 li,
-.coluna-5 li,
-.coluna-6 li {
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    margin: 2px 0;
-    width: 100%;
-    height: 10px;
-}
-
-.coluna-1 li.azul,
-.coluna-2 li.azul,
-.coluna-3 li.azul,
-.coluna-4 li.azul,
-.coluna-5 li.azul,
-.coluna-6 li.azul {
-    background-color: #3498db;
-}
-
-.coluna-1 span,
-.coluna-2 span,
-.coluna-3 span,
-.coluna-4 span,
-.coluna-5 span,
-.coluna-6 span {
-    position: absolute;
-    bottom: -25px; font-size: 14px;
-    font-weight: bold;
-    color: #34495e;
-    text-align: center;
-    width: 100%;
-}
-
-.coluna-4 .Ataque-Especial,
-.coluna-5 .Defesa-Esspecial {
-    font-size: 12px;
-    color: #9b59b6;
-}
-
-
-li.azul:hover {
-    background-color: #2ecc71;
-    cursor: pointer;
-}
-
-
-.type,
-.weaknesses {
-
-    text-align: right;
-    margin: 20px;
-}
-
-.type button,
-.weaknesses button {
-    margin: 10px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.grass {
-    background-color: #78C850;
-    color: white;
-}
-
-.posion {
-    background-color: #A040A0;
-    color: white;
-}
-
-.fire {
-    background-color: #F08030;
-    color: white;
-}
-
-.ice {
-    background-color: #98D8D8;
-    color: white;
-}
-
-.flying {
-    background: linear-gradient(50px, #A890F0, #979858);
-}
-
-.psychic {
-    background-color: #F85888;
-    color: white;
-}
-
-
-.evolucoes {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.evolucoes1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.pokemons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.pokemon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 10px;
-    width: 120px;
-    text-align: center;
-}
-
-.pokemon img {
-    margin-bottom: 10px;
-}
-
-.bulbasaur1 p1,
-.ivysaur p4,
-.venusaur p5 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #34495e;
-    margin-bottom: 10px;
-}
-
-button {
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin: 5px 0;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.grass1,
-.grass2,
-.grass3 {
-    background-color: #2ecc71;
-    color: white;
-}
-
-.posion1,
-.posion2,
-.posion3 {
-    background-color: #9b59b6;
-    color: white;
-}
-
-.seta img {
+ 
+img.pokeball {
     width: 30px;
-    height: auto;
+    height: 30px;
+    margin: 0px 0px 0px 10px;
+}
+ 
+#x {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: dodgerblue;
+}
+ 
+#y {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+}
+ 
+div.informacoes {
+    display: flex;
+    background-color: deepskyblue;
+    border-radius: 8px;
+}
+ 
+ul.informacoes {
+    padding-right: 40px;
+}
+ 
+.cor {
+    color: white;
+}
+ 
+.cor + li {
+    font-size: x-large;
+}
+ 
+li img {
+    width: 35px;
+    height: 35px;
+}
+ 
+div.grid-container#type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+}
+ 
+span#type {
+    display: block;
+    padding: 5px 0px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 125px;
+    text-align: center;
+}
+ 
+.grass {
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+ 
+.poison {
+    color: white;
+    background-color: plum;
+    border-color: plum;
+}
+ 
+.fire {
+    color: white;
+    background-color: darkorange;
+    border-color: darkorange;
+}
+ 
+.ice {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+ 
+.flying {
+    background: linear-gradient(180deg, deepskyblue 50%, lightgray 50%);
+}
+ 
+.psychic {
+    color: white;
+    background-color: hotpink;
+    border-color: hotpink;
+}
+ 
+h1 span, h3 span {
+    color: gray;
+}
+ 
+div.evolutions li img {
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    box-shadow: 2px 4px 6px;
+    background-color: dimgray;
+}
+ 
+li span#type {
+    display: block;
+    margin: 15px;
+    border-radius: 8px;
+    width: 62px;
+    text-align: center;
+}
+ 
+li div.grid-container#type {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+ 
+li .center {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+ 
+li h3 span {
+    color: lightgray;
+}
+ 
+li h3  {
+    color: white;
+}
+ 
+div.evolutions > h3 {
+    margin: 15px;
+    color: white;
+}
+ 
+div.evolutions {
+    width: 980px;
+    border-radius: 8px;
+}
+ 
+div.evolutions img {
+    width: 215px;
+    height: 215px;
+}
+ 
+div.evolutions ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+ 
+div.evolutions li {
+    width: 215px;
 }
