@@ -177,6 +177,17 @@ div.evolutions li img {
     background-color: dimgray;
 }
 
+div.evolutions li img.arrow {
+    border-style: none !important;
+    width: 88px;
+    height: 88px;
+    border-radius: 0px !important;
+    border-width: 0px !important;
+    box-shadow: 0px 0px 0px !important;
+    background-color: hsla(0, 0%, 100%, 0) !important;
+    margin-top: 100%;
+}
+
 li span#type {
     display: block;
     margin: 15px;
@@ -211,7 +222,6 @@ div.evolutions > h3 {
 }
 
 div.evolutions {
-   /* background-color: dimgray;*/
     background-image: url(./images/bg/body_gray_bg.png);
     width: 980px;
     border-radius: 8px;
@@ -230,4 +240,8 @@ div.evolutions ul {
 
 div.evolutions li {
     width: 215px;
+}
+
+div.evolutions li.arrow {
+    width: 88px;
 }
