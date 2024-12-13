@@ -1,31 +1,127 @@
 body {
-	display: grid;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3% 8,3%;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 1310px;
+	height: 100%;
+	flex-wrap: wrap;
+	font-family: "Flexo-Regular", arial, sans-serif;
+    font-size: 16px;
 }
 
-body div#imagem-bulbasur {
+div#pokedex {
 	display: grid;
-	grid-column-start: 1;
-	grid-column-end: 7;
+	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-body div#texto-informativo {
+div#titulo {
+	display: grid;
+	display: flex;
+	grid-area: 1 / 5 / 1 / 5;
+	width: 300px;
+	height: 50px;
+	gap: 15px;
+	align-items: center;
+	margin-top: 35px;
+}
+
+div#tiulo h1:first-child {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(0,0,0);
+}
+
+div#titulo h1:last-child, div#titulo h1:nth-last-child(2) {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(100,100,100);
+	float: right;
+}
+
+div#imagem-bulbasaur {
+	display: grid;
+	grid-area: 2 / 3 / 2 / 3;
+	width: 332.4px;
+	height: 362.2px;
+	margin-left: 40px;
+}
+
+div#imagem-bulbasaur img {
+	width: 332.4px;
+	height: 362.2px;
+}
+
+div#texto-explicativo {
+	display: grid;
+	grid-area: 2 / 6 / 2 / 9;
+	max-height: 55px;
+	margin-right: 20px;
+	align-items: top;
+}
+
+div#versoes {
+	display: grid;
+	grid-area: 2 / 6 / 2 / 9;
+	margin-top: 76px;
+	margin-right: 20px;
+}
+
+div#versoes p {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-direction: row;
+	align-items:center;
+}
+
+div#quadro-de-informacoes {
+	display: grid;
+	grid-area: 3 / 6 / 3 / 6;
+	margin-right: 20px;
+}
+
+div#tipagem {
 	display:grid;
-	grid-column-start: 7;
-	grid-column-end: 7;
+	grid-area: 5/6/5/6;
+	height: 60px;
+}
+
+div#fraquezas {
+	display:grid;
+	grid-area: 5/6/5/9;
+	height: 100px;
+	margin-top: 75px;
+}
+
+div.grafico-status {
+	display: grid;
+	grid-area: 5/3/5/5;
+	width: 332.4px;
+	height: 258.75px;
+	margin-left: 40px;
+}
+
+div#grafico-de-evolucoes {
+	display:grid;
+	grid-area: 7/3/9/10;
+	margin-top: 40px;
 }
 
 div#container-grafico-status {
 	display: grid;
   	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-	width: 396px;
+	width: 332.4px;
 	height: 258.75px; 
-	background-color: rgb(100,100,100);
+	background-color: rgb(150,150,150);
 	border-radius: 10px;
 }
+
 
 div#container-grafico-status > div{
 	display: grid;
@@ -62,12 +158,12 @@ div#grafico-status div#marcacao-status-4-pontos {
 
 
 div.coluna {
-	background-color: rgb(100,100,100);
+	background-color: rgb(150,150,150);
 	margin:0;
 }
 
 div.linha {
-	background-color: rgb(100,100,100);
+	background-color: rgb(150,150,150);
 	margin:0;
 }
 
@@ -167,7 +263,6 @@ div#grafico-status div#linha16 {
 
 div#container-grafico-status > label{
 	color: white;
-	
 	width: 100px;
 	height: 18.75px;
 	margin-top: 10px;
@@ -185,6 +280,8 @@ div#quadro-de-informacoes div {
 	margin-right: 60px;
 	margin-left: 10px;
 	margin-top: 5px;
+	max-width: 126px;
+	min-width: 126px;
 }
 
 div#quadro-de-informacoes p {
@@ -204,7 +301,7 @@ div#quadro-de-informacoes {
 }
 
 div#tipagem div:first-child, div#fraquezas > div:first-child{
-	margin-bottom: 10px;
+	height: 20px;
 }
 
 div#tipos, div#botoes-fraquezas {
@@ -215,51 +312,79 @@ div#tipos, div#botoes-fraquezas {
 	flex-wrap: wrap;
 }
 
-div button {
+div#tipos div:last-child{
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+}
+
+button {
 	border-style: none;
 	width: 129px;
-	height: 20px;
+	height: 28px;
 	border-radius: 5px;
 	margin-bottom: 2px;
 }
 
 div#descricao-grafico {
 	display: grid;
-	background-color: blue;
 	width: 316.8 px;
 	height: 15px;
 	grid-area: 32 / 1 / 32 / 14;
 }
 
-div#descricao-grafico div{
+div#descricao-grafico ul{
 	display: flex;
-	justify-content: evenly-spaced;
 	flex-wrap: wrap;
-}
-
-div#descricao-grafico p {
-	display: inline;
+	width: 316.8 px;
+	height: 15px;
+	justify-content: space-around;
 	padding: 0px;
 	margin: 0px;
 }
 
-div#grafico-de-evolucoes {
-	background-color: rgb(60,60,60);
-	width: 860.58px;
-	height: 328.5px;
-}
-
-div#painel {
+div#descricao-grafico li, div#descricao-grafico ul {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 10px;
+	white-space: pre-line;
+	text-align: center;
+	font-weight: bold;
 }
 
-div#painel  img {
-	background-color: rgb(60,60,60);
+li#hp {
+	padding-left: 13px;
+}
+
+li#attack {
+	padding-left: 13px;
+}
+
+li#speed {
+	padding-right: 7px;
+}
+
+div#grafico-de-evolucoes {
+	background-color: rgb(85,85,85);
+	width: 755.58px;
+	height: 328.5px;
+	border-radius: 10px;
+	margin-left: 40px;
+}
+
+div#grafico-de-evolucoes > label{
+	color: rgb(255,255,255);
+	height:20px;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+div#painel  img.pokemons {
+	background-color: rgb(85,85,85);
 	width: 150px;
 	height: 150px;
-	border: 10px solid rgb(250,250,250);
+	border: 5px solid rgb(250,250,250);
 	border-radius: 50%;
 }
 
@@ -270,6 +395,7 @@ button#grass {
 button#grass2 {
 	background-color: hsl(125,60%,60%);
 	width: 70px;
+	height: 20px;
 }
 
 button#poison {
@@ -281,6 +407,7 @@ button#poison2 {
 	background-color: hsl(270,50%,65%);
 	color: white;
 	width: 70px;
+	height: 20px;
 }
 
 button#fire {
@@ -292,8 +419,9 @@ button#ice {
 	background-color: hsl(200,100%,68%);
 }
 
-button#flynig {
-	background-color: rbg (0,0,0);
+button#flying {
+	background: linear-gradient(180deg, rgb(0,200,250) 50%, rgb(190,190,190) 50%);
+	transition: 0.3s;
 }
 
 button#psychic {
@@ -307,8 +435,8 @@ div#basico div, div#primeira-evolucao div, div#segunda-evolucao div {
 	align-items: space-around;
 }
 
-div > h2:first-child {
-	color: rgb(100,100,100);
+div > h2:last-child {
+	color: rgb(120,120,120);
 }
 div h2 {
 	margin: 10px;
@@ -317,5 +445,20 @@ div h2 {
 div.tipagem-evolutiva {
 	display: flex;
 	flex-direction: row;
+	gap: 10px;
+}
+
+div#painel > div {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+div#painel {
+	display:flex;
+	width: 100%;
+	height: 270px;
+	flex-direction: row;
+	align-items: center;
 	justify-content: space-around;
 }
