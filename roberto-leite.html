@@ -14,17 +14,35 @@
             <h1 class="center">Bulbasaur <span># 0001</span></h1>
         </div>
     </header>
-    <div class="texto">
-        <p>For some time after its birth, it uses the nutrients that are packes into the seed on its back in order to
-            grow.</p>
-        <br>
-    </div>
-    <div class="foto">
-        <img src="./img/001.png" alt="">
-    </div>
-    <div class="card">
-
+    <div class="flexbox-container">
         <div class="esquerda">
+            <div class="foto">
+                <img src="./img/001.png" alt="">
+            </div>
+            <div class="status">
+                <tr>
+                    <th>HP</th>
+                    <th>Attack</th>
+                    <th>Defense</th>
+                    <th>Special<br>Attack</th>
+                    <th>Special<br>Defense</th>
+                    <th>Speed</th>
+                </tr>
+            </div>
+        </div>
+
+    </div>
+    <div class="direita">
+        <div class="texto">
+            <p>For some time after its birth, it uses the nutrients that are packes into the seed on its back in
+                order
+                to
+                grow.</p>
+            <br>
+        </div>
+        <div class="card">
+
+
             <ul>
                 <li class="color-white">Height</li>
                 <li>2' 04"</li>
@@ -32,39 +50,54 @@
                 <li>15.2 lbs</li>
                 <li class="color-white">Gender</li>
             </ul>
-        </div>
-
-
-        <div class="direita">
             <ul>
                 <li class="color-white">Category</li>
                 <li>Seed</li>
                 <li class="color-white">Abilities</li>
                 <li>Overgrow</li>
             </ul>
+            <div class="type">
+                <h3>Type</h3>
+                <li>
+                    <div class="type-grass">
+                        <h3>Grass</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="type-poison">
+                        <h3>Poison</h3>
+                    </div>
+                </li>
+            </div>
         </div>
     </div>
-    <div class="evolutions">
-        <li><img src="img/evoluções/b1.png" alt="">
-            <h3 class="center">Bulbasaur <span># 0001</span></h3>
-            <div class="grid_container" id="type">
-                <span class="grass" id="type">Grass</span>
-                <span class="poison" id="type">Poison</span>
-            </div></li>
+    </div>
+    <div class="flexbox-container-baixo">
+        <div class="evolutions">
+            <li><img src="img/evoluções/b1.png" alt="">
+                <h3 class="center">Bulbasaur <span># 0001</span></h3>
+                <div class="grid_container" id="type">
+                    <span class="grass" id="type">Grass</span>
+                    <span class="poison" id="type">Poison</span>
+                </div>
+            </li>
             <li><img src="img/evoluções/b2.png" alt="">
                 <h3 class="center">Ivysaur <span># 0002</span></h3>
                 <div class="grid_container" id="type">
                     <span class="grass" id="type">Grass</span>
                     <span class="poison" id="type">Poison</span>
-                </div></li>
-                <li><img src="img/evoluções/b3.png" alt="">
-                    <h3 class="center">Venusaur <span># 0003</span></h3>
-                    <div class="grid_container" id="type">
-                        <span class="grass" id="type">Grass</span>
-                        <span class="poison" id="type">Poison</span>
-                    </div></li>
+                </div>
+            </li>
+            <li><img src="img/evoluções/b3.png" alt="">
+                <h3 class="center">Venusaur <span># 0003</span></h3>
+                <div class="grid_container" id="type">
+                    <span class="grass" id="type">Grass</span>
+                    <span class="poison" id="type">Poison</span>
+                </div>
+            </li>
 
 
+        </div>
     </div>
 </body>
 
