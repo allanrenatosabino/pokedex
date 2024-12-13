@@ -1,0 +1,464 @@
+body {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 1310px;
+	height: 100%;
+	flex-wrap: wrap;
+	font-family: "Flexo-Regular", arial, sans-serif;
+    font-size: 16px;
+}
+
+div#pokedex {
+	display: grid;
+	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+div#titulo {
+	display: grid;
+	display: flex;
+	grid-area: 1 / 5 / 1 / 5;
+	width: 300px;
+	height: 50px;
+	gap: 15px;
+	align-items: center;
+	margin-top: 35px;
+}
+
+div#tiulo h1:first-child {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(0,0,0);
+}
+
+div#titulo h1:last-child, div#titulo h1:nth-last-child(2) {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(100,100,100);
+	float: right;
+}
+
+div#imagem-bulbasaur {
+	display: grid;
+	grid-area: 2 / 3 / 2 / 3;
+	width: 332.4px;
+	height: 362.2px;
+	margin-left: 40px;
+}
+
+div#imagem-bulbasaur img {
+	width: 332.4px;
+	height: 362.2px;
+}
+
+div#texto-explicativo {
+	display: grid;
+	grid-area: 2 / 6 / 2 / 9;
+	max-height: 55px;
+	margin-right: 20px;
+	align-items: top;
+}
+
+div#versoes {
+	display: grid;
+	grid-area: 2 / 6 / 2 / 9;
+	margin-top: 76px;
+	margin-right: 20px;
+}
+
+div#versoes p {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-direction: row;
+	align-items:center;
+}
+
+div#quadro-de-informacoes {
+	display: grid;
+	grid-area: 3 / 6 / 3 / 6;
+	margin-right: 20px;
+}
+
+div#tipagem {
+	display:grid;
+	grid-area: 5/6/5/6;
+	height: 60px;
+}
+
+div#fraquezas {
+	display:grid;
+	grid-area: 5/6/5/9;
+	height: 100px;
+	margin-top: 75px;
+}
+
+div.grafico-status {
+	display: grid;
+	grid-area: 5/3/5/5;
+	width: 332.4px;
+	height: 258.75px;
+	margin-left: 40px;
+}
+
+div#grafico-de-evolucoes {
+	display:grid;
+	grid-area: 7/3/9/10;
+	margin-top: 40px;
+}
+
+div#container-grafico-status {
+	display: grid;
+  	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	width: 332.4px;
+	height: 258.75px; 
+	background-color: rgb(150,150,150);
+	border-radius: 10px;
+}
+
+
+div#container-grafico-status > div{
+	display: grid;
+	margin: 0px;
+	padding: 0px;
+	grid-column-start: 2;
+	grid-column-end: 10;
+	grid-row-start: 3;
+	grid-row-end: 9;
+	grid-template-columns: 7px 1fr 7px 1fr 7px 1fr 7px 1fr 7px 1fr 7px 1fr 7px;
+	grid-template-rows: 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr 3px;
+	background-color: rgb(250,250,250);
+	column-gap: 10px;
+	row-gap: 4px; 
+}
+
+div#grafico-status div#marcacao-status-3-pontos {
+	display:grid;
+	background-color: rgb(00,160,250);
+	grid-column-start: 1;
+	grid-column-end: span 13;
+	grid-row-start: 23;
+	grid-row-end: span 9;
+}
+
+div#grafico-status div#marcacao-status-4-pontos {
+	display:grid;
+	background-color: rgb(00,160,250);
+	grid-column-start: 7;
+	grid-column-end: span 5;
+	grid-row-start: 21;
+	grid-row-end: span 8;
+}
+
+
+div.coluna {
+	background-color: rgb(150,150,150);
+	margin:0;
+}
+
+div.linha {
+	background-color: rgb(150,150,150);
+	margin:0;
+}
+
+div#grafico-status div#coluna1 {
+	display: grid;
+	grid-area: 1 / 1 / 32 / 1;
+}
+div#grafico-status div#coluna2 {
+	display: grid;
+	grid-area: 1 / 3 / 32 / 3;
+}
+div#grafico-status div#coluna3 {
+	display: grid;
+	grid-area: 1 / 5 / 32 / 5;
+}
+div#grafico-status div#coluna4 {
+	display: grid;
+	grid-area: 1 / 7 / 32 / 7;
+}
+div#grafico-status div#coluna5 {
+	display: grid;
+	grid-area: 1 / 9 / 32 / 9;
+}
+div#grafico-status div#coluna6 {
+	display: grid;
+	grid-area: 1 / 11 / 32 / 11;
+}
+div#grafico-status div#coluna7 {
+	display: grid;
+	grid-area: 1 / 13 / 32 / 13;
+}
+
+div#grafico-status div#linha1 {
+	display: grid;
+	grid-area: 1 / 1 / 1 / 14;
+}
+div#grafico-status div#linha2 {
+	display: grid;
+	grid-area: 3 / 1 / 3 / 14;
+}
+div#grafico-status div#linha3 {
+	display: grid;
+	grid-area: 5 / 1 / 5 / 14;
+}
+div#grafico-status div#linha4 {
+	display: grid;
+	grid-area: 7 / 1 / 7 / 14;
+}
+div#grafico-status div#linha5 {
+	display: grid;
+	grid-area: 9 / 1 / 9 / 14;
+}
+div#grafico-status div#linha6 {
+	display: grid;
+	grid-area: 11 / 1 / 11 / 14;
+}
+div#grafico-status div#linha7 {
+	display: grid;
+	grid-area: 13 / 1 / 13 / 14;
+}
+div#grafico-status div#linha8 {
+	display: grid;
+	grid-area: 15 / 1 / 15 / 14;
+}
+div#grafico-status div#linha9 {
+	display: grid;
+	grid-area: 17 / 1 / 17 / 14;
+}
+div#grafico-status div#linha10 {
+	display: grid;
+	grid-area: 19 / 1 / 19 / 14;
+}
+div#grafico-status div#linha11 {
+	display: grid;
+	grid-area: 21 / 1 / 21 / 14;
+}
+div#grafico-status div#linha12 {
+	display: grid;
+	grid-area: 23 / 1 / 23 / 14;
+}
+div#grafico-status div#linha13 {
+	display: grid;
+	grid-area: 25 / 1 / 25 / 14;
+}
+div#grafico-status div#linha14 {
+	display: grid;
+	grid-area: 27 / 1 / 27 / 14;
+}
+div#grafico-status div#linha15 {
+	display: grid;
+	grid-area: 29 / 1 / 29 / 14;
+}
+div#grafico-status div#linha16 {
+	display: grid;
+	grid-area: 31 / 1 / 31 / 14;
+}
+
+div#container-grafico-status > label{
+	color: white;
+	width: 100px;
+	height: 18.75px;
+	margin-top: 10px;
+	margin-left: 35px;
+}
+
+div#texto-explicativo {
+	display: flex;
+	width: 396px;
+	flex-wrap: wrap;
+}
+
+div#quadro-de-informacoes div {
+	color: white;
+	margin-right: 60px;
+	margin-left: 10px;
+	margin-top: 5px;
+	max-width: 126px;
+	min-width: 126px;
+}
+
+div#quadro-de-informacoes p {
+	color: rgb(0,0,0);
+	margin: 0px;
+}
+
+
+div#quadro-de-informacoes {
+	display: flex;
+	width: 396px;
+	height: 228px;
+	background-color: rgb(0,175,250);
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius: 10px;
+}
+
+div#tipagem div:first-child, div#fraquezas > div:first-child{
+	height: 20px;
+}
+
+div#tipos, div#botoes-fraquezas {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	width: 397px;
+	flex-wrap: wrap;
+}
+
+div#tipos div:last-child{
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+}
+
+button {
+	border-style: none;
+	width: 129px;
+	height: 28px;
+	border-radius: 5px;
+	margin-bottom: 2px;
+}
+
+div#descricao-grafico {
+	display: grid;
+	width: 316.8 px;
+	height: 15px;
+	grid-area: 32 / 1 / 32 / 14;
+}
+
+div#descricao-grafico ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 316.8 px;
+	height: 15px;
+	justify-content: space-around;
+	padding: 0px;
+	margin: 0px;
+}
+
+div#descricao-grafico li, div#descricao-grafico ul {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 10px;
+	white-space: pre-line;
+	text-align: center;
+	font-weight: bold;
+}
+
+li#hp {
+	padding-left: 13px;
+}
+
+li#attack {
+	padding-left: 13px;
+}
+
+li#speed {
+	padding-right: 7px;
+}
+
+div#grafico-de-evolucoes {
+	background-color: rgb(85,85,85);
+	width: 755.58px;
+	height: 328.5px;
+	border-radius: 10px;
+	margin-left: 40px;
+}
+
+div#grafico-de-evolucoes > label{
+	color: rgb(255,255,255);
+	height:20px;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+div#painel  img.pokemons {
+	background-color: rgb(85,85,85);
+	width: 150px;
+	height: 150px;
+	border: 5px solid rgb(250,250,250);
+	border-radius: 50%;
+}
+
+button#grass {
+	background-color: hsl(125,60%,60%);
+}
+
+button#grass2 {
+	background-color: hsl(125,60%,60%);
+	width: 70px;
+	height: 20px;
+}
+
+button#poison {
+	background-color: hsl(270,50%,65%);
+	color: white;
+}
+
+button#poison2 {
+	background-color: hsl(270,50%,65%);
+	color: white;
+	width: 70px;
+	height: 20px;
+}
+
+button#fire {
+	background-color: hsl(35,100%,50%);
+	color: white;
+}
+
+button#ice {
+	background-color: hsl(200,100%,68%);
+}
+
+button#flying {
+	background: linear-gradient(180deg, rgb(0,200,250) 50%, rgb(190,190,190) 50%);
+	transition: 0.3s;
+}
+
+button#psychic {
+	background-color: hsl(300,100%,70%);
+	color: white;
+}
+
+div#basico div, div#primeira-evolucao div, div#segunda-evolucao div {
+	display: flex;
+	flex-direction: line;
+	align-items: space-around;
+}
+
+div > h2:last-child {
+	color: rgb(120,120,120);
+}
+div h2 {
+	margin: 10px;
+}
+
+div.tipagem-evolutiva {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+div#painel > div {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+div#painel {
+	display:flex;
+	width: 100%;
+	height: 270px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
