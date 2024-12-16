@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +7,10 @@
 .geral {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.9fr 5fr 2fr;
+    grid-template-rows: 0.1fr 5fr 2fr;
     gap: 10px;
     padding: 10px;
-    height: 150vh;
+    height: 175vh;
     width: 100vw;
 }
 
@@ -42,33 +41,41 @@
     grid-row: 3;
     grid-column: 1 / span 2;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
 }
 
-.a4 img {
-    width: 30%;
+img {
     height: auto;
+    max-width: 100%;
 }
-
 
 .imagem {
-    background-color: #a4a4a4;
+
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #F2F2F2;
+    padding: 10px;
+
 }
 
 h1 {
     display: inline;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 30px;
 }
 
 h2 {
+    display: inline;
+    margin-top: 5px;
     color: #a4a4a4;
+    font-size: 30px;
 }
 
+.pokebolas {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
 
 .pokebolas span img {
     display: inline;
@@ -92,6 +99,10 @@ h2 {
     padding: 5px;
 }
 
+.dados div p:not(.branco) {
+    margin-bottom: 20px;
+}
+
 .direita {
     width: 50%;
     padding: 5px;
@@ -102,7 +113,7 @@ h2 {
 }
 
 .dados div.direita img {
-    width: 10%;
+    width: 5%;
 }
 
 .dados2 {
@@ -115,6 +126,14 @@ h2 {
 
 .span-botao {
     border-radius: 5%;
+}
+
+.cinza-letra {
+    color: #a4a4a4;
+}
+
+.dados3 {
+    margin-top: 25px;
 }
 
 .botoes {
@@ -159,8 +178,17 @@ h2 {
     background-image: url(img/fundo.png);
 }
 
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .sequencia {
     display: flex;
+    align-items: center;
 }
 
 .tabela {
@@ -171,9 +199,16 @@ h2 {
     flex-direction: column;
 }
 
+.status {
+    border-radius: 5px;
+    background-color: #A4A4A4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
 .status h3 {
     font-size: small;
-    background-color: #A4A4A4;
     margin: 5px;
     padding: 15px;
     padding-bottom: 10px;
@@ -203,10 +238,28 @@ td {
     background-color: #30A7D7;
 }
 
-.sequencia>.span-botao{
-    padding:10px;
-    margin: 5px;
+.sequencia .botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.sequencia .span-botao {
+    padding: 5px;
+    margin: 10px;
     width: 50px;
-    text-align:center;
-    
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.circulo {
+    background-color: #616161;
+    border: 7px solid white;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.paragrafo {
+    justify-self: start;
+    margin:5px;
 }
