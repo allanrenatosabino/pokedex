@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.geral {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 5fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    height: 175vh;
+    width: 100vw;
+}
+
+.a1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+
+    overflow: hidden;
+    margin: 10px;
+}
+
+.a3 {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+
+    margin: 10px;
+}
+
+.a4 {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.imagem {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #F2F2F2;
+    padding: 10px;
+
+}
+
+h1 {
+    display: inline;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+h2 {
+    display: inline;
+    margin-top: 5px;
+    color: #a4a4a4;
+    font-size: 30px;
+}
+
+.pokebolas {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.pokebolas span img {
+    display: inline;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.pokebolas h3 {
+    display: inline;
+    font-size: medium;
+}
+
+.dados {
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.esquerda {
+    width: 50%;
+    padding: 5px;
+}
+
+.dados div p:not(.branco) {
+    margin-bottom: 20px;
+}
+
+.direita {
+    width: 50%;
+    padding: 5px;
+}
+
+.dados div.esquerda img {
+    width: 15%;
+}
+
+.dados div.direita img {
+    width: 5%;
+}
+
+.dados2 {
+    display: flex;
+}
+
+.dados2 h3 {
+    display: block;
+}
+
+.span-botao {
+    border-radius: 5%;
+}
+
+.cinza-letra {
+    color: #a4a4a4;
+}
+
+.dados3 {
+    margin-top: 25px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+}
+
+.azul {
+    background-color: #30a7d7;
+}
+
+.verde {
+    background-color: #9bcc50;
+}
+
+.rosa {
+    background-color: #f366b9;
+}
+
+.roxo {
+    background-color: #b97fc9;
+}
+
+.laranja {
+    background-color: #fd7d24;
+}
+
+.cinza {
+    background-color: #a4a4a4;
+}
+
+.branco {
+    color: #f3eded;
+}
+
+.azul-cinza {
+    background: linear-gradient(to bottom, #30a7d7 50%, #BDB9B8 50%);
+}
+
+.a4 {
+    background-image: url(img/fundo.png);
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.sequencia {
+    display: flex;
+    align-items: center;
+}
+
+.tabela {
+    border-radius: 0.5cap;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.status {
+    border-radius: 5px;
+    background-color: #A4A4A4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.status h3 {
+    font-size: small;
+    margin: 5px;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
+table {
+    align-self: center;
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #A4A4A4;
+}
+
+th {
+    font-size: 12px;
+}
+
+td {
+    width: 10%;
+    height: 7px;
+    text-align: center;
+    border: 5px solid #A4A4A4;
+    background-color: white;
+}
+
+.azul {
+    background-color: #30A7D7;
+}
+
+.sequencia .botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.sequencia .span-botao {
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.circulo {
+    background-color: #616161;
+    border: 7px solid white;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.paragrafo {
+    justify-self: start;
+    margin:5px;
+}
