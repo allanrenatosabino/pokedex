@@ -1,36 +1,67 @@
 @charset "UTF-8";
 
 body {
-    .flexbox-container{
+    .flexbox-container {
         display: grid;
-        grid-template-areas: 
-        "header"
-        "menu content"
-        "footer";
+        grid-template-areas:
+            "header"
+            "menu content"
+            "footer";
         grid-template-columns: 1fr 3fr;
         gap: 5px;
-        padding: 5px;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
     }
 
     .card {
-
-        height: 200px;
-        width: 25%;
-        background-color: hsla(195, 100%, 39%, 0.904);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        background-color: #45b6e6;
+        padding: 15px;
         border-radius: 8px;
+        color: white;
         justify-items: flex-start;
         font-size: small;
+        list-style-type: none;
 
         .color-white {
             color: antiquewhite;
+
         }
 
 
     }
 
+    .card img {
+        display: grid;
+        grid-template-rows: auto;
+        width: 35px;
+        height: 35px;
+        list-style-type: none;
+    }
 
+}
 
+.versions li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
 
+}
+
+.pokeball-blue img {
+    border-color: rgba(0, 102, 255, 0.507);
+    border-radius: 8px;
+    border-style: solid;
+    width: 35px;
+    height: 35px;
+}
+
+.pokeball-red img {
+    width: 35px;
+    height: 35px;
 }
 
 header {
@@ -50,6 +81,13 @@ header {
 
 }
 
+.stats {
+    background-color: #999;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
 
 @font-face {
     font-family: "Flexo-Medium";
@@ -61,8 +99,11 @@ header {
 }
 
 img {
-    width: auto;
-    padding-top: 0%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .evolutions {
@@ -70,25 +111,35 @@ img {
     border-style: solid;
 }
 
-.type {
+.type li {
+    display: inline-block;
     list-style-type: none;
-    justify-content: flex-end;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: smaller;
 }
 
 .type-grass {
     background-color: green;
-    width: fit-content;
-    font-size: medium;
-    text-align: end;
-    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 .type-poison {
     background-color: purple;
-    width: fit-content;
-    font-size: medium;
-    text-align: end;
-    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
 
     h3 {
         color: white;
@@ -99,6 +150,32 @@ img {
     justify-content: end;
 }
 
+.fire {
+    background-color: #f08030;
+}
+
+.ice {
+    background-color: #98d8d8;
+}
+
+.flying {
+    background-color: #a890f0;
+}
+
+.psychic {
+    background-color: #f85888;
+}
+
+.weakness-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+
 
 .evolutions {
     display: flex;
@@ -106,63 +183,75 @@ img {
     background-image: url(./img/body_gray_bg.png);
     width: auto;
     border-radius: 8px;
+    padding: 20px;
 }
 
-.palavra{
+.palavra {
     font-size: medium;
     font-family: sans-serif;
-    color:gainsboro ;
+    color: gainsboro;
     padding-left: 15px;
     padding-top: 0px;
+    margin-top: 20px;
 }
 
-h3 span{
+h3 span {
     color: grey;
 }
-.center{
+
+.center {
     color: whitesmoke;
 }
 
 .flexbox-container-baixo li img {
+    width: 200px;
+    height: 200px;
     border-color: white;
     border-style: solid;
     border-radius: 50%;
     border-width: 5px;
     box-shadow: 2px 4px 6px;
     background-color: dimgray;
+    margin-bottom: 10px;
 }
 
 .flexbox-container-baixo {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    gap: 20px;
     text-align: center;
-    justify-content: center;
     list-style-type: none;
+
 }
+
 .arrow {
-    width: 88px;
+    width: 5px;
+    height: 5px;
+    align-items: center;
+    color: white;
     border-style: none;
-    height: 88px;
-    border-radius: 0px;
-    border-width: 0px;
-    box-shadow: 0px 0px 0px;
-    background-color: hsla(0, 0%, 100%, 0);
-    margin-top: 8%;
-    
+    border-color: none;
+    position: inherit;
+
+
 }
+
 
 
 
 .esquerda {
     grid-area: auto;
 }
+
 .direita {
     grid-area: auto;
 }
 
-.texto {
+h2 {
 
     p {
+        color: grey;
         font-size: medium;
         text-align: right;
         justify-content: end;
