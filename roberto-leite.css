@@ -44,16 +44,21 @@ body {
 
 }
 
-.versions li {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style-type: none;
+.versions {
+    display: flex;
+}
 
+.versions>li {
+    flex-direction: column;
+}
+
+.versions li {
+    list-style-type: none;
 }
 
 .pokeball-blue img {
     border-color: rgba(0, 102, 255, 0.507);
-    border-radius: 8px;
+    border-radius: 50px;
     border-style: solid;
     width: 35px;
     height: 35px;
@@ -82,9 +87,21 @@ header {
 }
 
 .stats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     background-color: #999;
     padding: 15px;
     border-radius: 8px;
+    text-align: justify;
+}
+
+.retangulo-menor {
+    width: 60px;
+    height: 10px;
+    background-color: #ffffff;
+    grid-template-rows: repeat(15, 1fr);
+    gap: 10px;
+    border: 1px solid #ccc;
 }
 
 
@@ -107,8 +124,13 @@ img {
 }
 
 .evolutions {
+    display: grid;
     border-color: white;
     border-style: solid;
+}
+
+.evolutions li {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .type li {
@@ -120,6 +142,10 @@ img {
     margin-bottom: 5px;
     color: white;
     font-size: smaller;
+}
+
+.type h3{
+    color: black;
 }
 
 .type-grass {
@@ -141,7 +167,7 @@ img {
     margin-bottom: 5px;
     color: white;
 
-    h3 {
+    .h3 {
         color: white;
     }
 }
@@ -159,20 +185,29 @@ img {
 }
 
 .flying {
-    background-color: #a890f0;
+    background-image: linear-gradient(rgb(49, 190, 255), rgb(109, 108, 108));
 }
 
 .psychic {
     background-color: #f85888;
 }
 
-.weakness-badge {
-    display: inline-block;
+
+.weakness-selo div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.weakness-selo {
     padding: 5px 15px;
-    border-radius: 15px;
+    border-radius: 8px;
     margin-right: 10px;
     margin-bottom: 5px;
-    color: white;
+    width: 100px;
+    text-align: center;
+    color: black;
 }
 
 
@@ -203,6 +238,11 @@ h3 span {
     color: whitesmoke;
 }
 
+.evolutions h2 {
+    font-family: sans-serif;
+    color: rgba(250, 235, 215, 0.493);
+}
+
 .flexbox-container-baixo li img {
     width: 200px;
     height: 200px;
@@ -213,11 +253,12 @@ h3 span {
     box-shadow: 2px 4px 6px;
     background-color: dimgray;
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .flexbox-container-baixo {
     display: flex;
-    align-items: normal;
+    align-items: center;
     justify-content: space-around;
     gap: 20px;
     text-align: center;
@@ -225,9 +266,10 @@ h3 span {
 
 }
 
-.arrow {
-    width: 5px;
-    height: 5px;
+.arrow img {
+    width: 50px;
+    height: 50px;
+    margin-top: 125px;
     align-items: center;
     color: white;
     border-style: none;
@@ -237,8 +279,19 @@ h3 span {
 
 }
 
+.evolutions li span{
+    width: 100px;
+}
 
+.grass {
+    background-color: #78c850;
+    border-radius: 8px;
+}
 
+.poison {
+    background-color: #a040a0;
+    border-radius: 8px;
+}
 
 .esquerda {
     grid-area: auto;
